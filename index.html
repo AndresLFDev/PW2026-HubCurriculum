@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/output.css">
+    <title>HubCurriculum</title>
+    <style>
+        body {
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        h1,
+        h2 {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .banner-img {
+            background-image: url('./src/img/UnimagLogo.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .card-img-1 {
+            background-image: url('./src/img/cardImg-1.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-img-2 {
+            background-image: url('./src/img/cardImg-2.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-img-3 {
+            background-image: url('./src/img/cardImg-3.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-img-4 {
+            background-image: url('./src/img/cardImg-4.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-img-5 {
+            background-image: url('./src/img/cardImg-5.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-img-6 {
+            background-image: url('./src/img/cardImg-6.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-up {
+            animation: fadeUp 1s ease forwards;
+        }
+
+        .fade-up-delay {
+            animation: fadeUp 1s ease 0.4s forwards;
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body class="bg-stone-50 text-stone-900">
+    <!-- NAV -->
+    <nav
+        class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-8 py-5 bg-stone-50/80 backdrop-blur-sm border-b border-stone-200">
+        <span class="text-xl tracking-widest uppercase font-light" style="font-family:'Cormorant Garamond',serif">Hub
+            Curriculums</span>
+        <ul class="hidden md:flex gap-8 text-xs tracking-widest uppercase text-stone-500">
+            <li><a href="https://andreslfdev.github.io/PW2026-Curriculum/"
+                    class="hover:text-stone-900 transition-colors">Mi curriculum</a></li>
+            <li><a href="#lista" class="hover:text-stone-900 transition-colors">Lista</a></li>
+        </ul>
+    </nav>
+
+    <!-- BANNER -->
+    <section class="banner-img relative h-screen flex items-end pb-20 px-8 md:px-16">
+        <!-- overlay -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+
+        <div class="relative z-10 max-w-3xl">
+            <p class="fade-up text-xs tracking-[0.3em] uppercase text-stone-900 mb-4"> Programacion WEB</p>
+            <h1 class="fade-up-delay text-5xl md:text-7xl font-light text-white leading-tight">
+                Lista de<br />Curriculums
+            </h1>
+        </div>
+    </section>
+
+    <!-- INTRO TEXT -->
+    <section class="max-w-xl mx-auto px-8 py-20 text-center">
+        <p class="text-stone-500 font-light leading-relaxed text-lg">
+            Aqui encontraras una lista de curriculums de mis compañeros de clase de la materia de programacion web
+        </p>
+        <div class="mt-6 w-8 h-px bg-stone-300 mx-auto"></div>
+    </section>
+
+    <!-- GRID DE TARJETAS -->
+    <section id="lista" class="max-w-6xl mx-auto px-6 pb-24">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Card 1 -->
+            <a href="https://curriculumvitaeandresluna.vercel.app">
+                <div class="card bg-white border border-stone-100 rounded-sm overflow-hidden group">
+                    <div class="card-img-1 h-56 w-full group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-5">
+                        <span class="text-xs tracking-widest uppercase text-stone-400">Programador</span>
+                        <h2 class="text-xl font-light mt-1 mb-2">Andres Luna</h2>
+                        <div
+                            class="mt-4 text-xs tracking-widest uppercase text-stone-800 border-b border-stone-800 inline-block pb-0.5">
+                            Ir al CV →</div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 2 -->
+            <a href="https://yuranisbottojimenez-hub.github.io/HojadevidaYuranis.io/">
+                <div class="card bg-white border border-stone-100 rounded-sm overflow-hidden group">
+                    <div class="card-img-2 h-56 w-full group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-5">
+                        <span class="text-xs tracking-widest uppercase text-stone-400">Programador</span>
+                        <h2 class="text-xl font-light mt-1 mb-2">Yuranis Botto</h2>
+                        <div
+                            class="mt-4 text-xs tracking-widest uppercase text-stone-800 border-b border-stone-800 inline-block pb-0.5">
+                            Ir al CV →</div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="https://anakarina15.github.io/HojadeVida.AnaKarinaRivera.io/">
+                <div class="card bg-white border border-stone-100 rounded-sm overflow-hidden group">
+                    <div class="card-img-3 h-56 w-full group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-5">
+                        <span class="text-xs tracking-widest uppercase text-stone-400">Programador</span>
+                        <h2 class="text-xl font-light mt-1 mb-2">Ana Karina Rivera</h2>
+                        <div
+                            class="mt-4 text-xs tracking-widest uppercase text-stone-800 border-b border-stone-800 inline-block pb-0.5">
+                            Ir al CV →</div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 4 -->
+            <a href="https://afriverag.github.io/CV/">
+                <div class="card bg-white border border-stone-100 rounded-sm overflow-hidden group">
+                    <div class="card-img-4 h-56 w-full group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-5">
+                        <span class="text-xs tracking-widest uppercase text-stone-400">Programador</span>
+                        <h2 class="text-xl font-light mt-1 mb-2">Andrés Rivera</h2>
+                        <div
+                            class="mt-4 text-xs tracking-widest uppercase text-stone-800 border-b border-stone-800 inline-block pb-0.5">
+                            Ir al CV →</div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 5 -->
+            <a href="https://davizq02.github.io/HDV/">
+                <div class="card bg-white border border-stone-100 rounded-sm overflow-hidden group">
+                    <div class="card-img-5 h-56 w-full group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-5">
+                        <span class="text-xs tracking-widest uppercase text-stone-400">Programador</span>
+                        <h2 class="text-xl font-light mt-1 mb-2">David Izquierdo</h2>
+                        <div
+                            class="mt-4 text-xs tracking-widest uppercase text-stone-800 border-b border-stone-800 inline-block pb-0.5">
+                            Ir al CV →</div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 6 -->
+            <a href="https://andreslfdev.github.io/PW2026-Curriculum/">
+                <div class="card bg-white border border-stone-100 rounded-sm overflow-hidden group">
+                    <div class="card-img-6 h-56 w-full group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-5">
+                        <span class="text-xs tracking-widest uppercase text-stone-400">Programador</span>
+                        <h2 class="text-xl font-light mt-1 mb-2">Andres Lara</h2>
+                        <div
+                            class="mt-4 text-xs tracking-widest uppercase text-stone-800 border-b border-stone-800 inline-block pb-0.5">
+                            Ir al CV →</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-stone-200 py-8 text-center text-xs tracking-widest uppercase text-stone-400">
+        © Unimagdalena 2026 — Hojas de vida
+    </footer>
+
+</body>
+
+</html>
